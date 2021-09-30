@@ -1,21 +1,11 @@
-import { useState } from "react";
 import "./style/Card.css";
+
 const Card = ({ states }) => {
-  const [recieveddata, setUpdateddata] = useState(states);
-  // const [appendrecieveddata, setAppendrecieveddata] = useState([]);
-  // const updatedobject = {
-  //   id: new Date().getDate().toString(),
-  //   newData: recieveddata,
-  // };
-  // setAppendrecieveddata([...appendrecieveddata,updatedobject]);
-
-  // console.log(appendrecieveddata);
-  // console.log(states);
-
   const added = () => {
     const addbtn = document.querySelector(".add");
     addbtn.src = "/images/checked.png";
   };
+
   const liked = () => {
     const image = document.querySelector("#image");
     console.log("clicked firstly");
@@ -24,10 +14,10 @@ const Card = ({ states }) => {
   };
   return (
     <>
-      {states.map((elem) => {
+      {states.map((elem) => { //we can also use object destructuring here
         return (
           <>
-            <div className="sub-Grid2_1">
+            <div className="sub-Grid2_1" key={elem.name}>
               <div className="card_divide1">
                 <div className="rating">
                   <h5>⭐</h5>

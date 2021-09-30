@@ -2,12 +2,6 @@ import { useState } from "react"
 
 const Grid3middle = () => {
 const [state,setState]=useState(1)
-// const [arr,setArr]=useState([
-//   {
-//     // weight:'350g',
-//   }
-  
-// ])
     return (
         <>
              <div className="itemsorderlayout">

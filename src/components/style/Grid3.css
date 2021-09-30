@@ -45,6 +45,7 @@
     transform: translateY(-20px);
 
 }
+
 .upperpart .timeanddate img{
     margin-left: 50px;
 }
@@ -113,9 +114,4 @@ cursor: pointer;
     justify-content: space-evenly;
     flex-direction: column;
     /* background-color: darkgreen; */
-}
-@media (max-width:400px) {
-    .Grid3{
-        display: none;
-    }
 }

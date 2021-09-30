@@ -8,13 +8,17 @@ const Grid3 = () => {
       <div className="Grid3">
         <div className="upperpart">
           <div className="text">
-            <div><h4>My Order</h4></div>
-            <div><h4>Edit</h4></div>
+            <div>
+              <h4>My Order</h4>
+            </div>
+            <div>
+              <h4>Edit</h4>
+            </div>
           </div>
           <div className="timeanddate">
             <div className="img">
               <img
-                src="/images/play-button.png"
+                src="/images/clock.png"
                 width="20px"
                 height="20px"
                 alt=""
@@ -32,7 +36,7 @@ const Grid3 = () => {
           <Grid3middle />
         </div>
         <div className="lowerpart">
-    <Grid3lower />
+          <Grid3lower />
         </div>
       </div>
     </>
